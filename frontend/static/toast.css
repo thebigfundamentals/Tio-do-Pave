@@ -1,0 +1,44 @@
+.toastNotification {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    position: fixed;
+    right: 10%;
+    top: 0;
+    margin: auto;
+    
+    padding: 1.2em;
+    background: #00afb9;
+    font-size: 1.1em;
+    color: #fdfcdc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #fed9b7;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, top 0.5s, visibility 0.5s;
+}
+
+.toastNotification--visible {
+    top: 2%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.toastNotification--excluded {
+    background: #f07167;
+    color: #fdfcdc;
+
+}
+
+.toastNotification--added {
+    background: #e56b6f;
+    color: #fdfcdc;
+}
+
+@media (max-width: 500px) {
+    .toastNotification {
+        padding: 0.6em;
+        font-size: 0.6em;
+        box-shadow: 0 0 5px #fed9b7;
+    }
+}

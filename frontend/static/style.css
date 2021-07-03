@@ -82,12 +82,25 @@ header h2 {
     color: #355070;
 }
 
+h2 p {
+    font-size: 0.8em;
+}
+
 .newJoke {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
     color: #355070;
     width: 80%;
+    margin-bottom: 1.2em;
+}
+
+.keyword {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #355070;
+    width: 30%;
     margin-bottom: 1.2em;
 }
 
@@ -152,6 +165,10 @@ footer a {
         font-size: 0.6em;
         color: #355070;
     }
+
+    h2 p {
+        font-size: 0.4em;
+    }
     
     .newJoke {
         font-family: 'Raleway', sans-serif;
@@ -160,6 +177,19 @@ footer a {
         color: #355070;
         width: 80%;
         margin-bottom: 1.2em;
+    }
+
+    .keyword {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 0.6em;
+        color: #355070;
+        width: 30%;
+        margin-bottom: 1.2em;
+    }
+
+    .keyword input {
+        font-size: 1em;
     }
     
     .generatorButton button, .newJokeButton button {

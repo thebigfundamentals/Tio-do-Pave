@@ -1,9 +1,11 @@
+import Toast from "./toast.js";
+
 const newJokeButton = document.querySelector('#newJokeButton');
 const newJokeInput = document.querySelector('#newJokeInput');
 
 const getValue = (element) => {
     return element.value
-}
+};
 
 class Joke {
     constructor(line) {
@@ -33,6 +35,7 @@ const clickHandler = async () => {
     const newJoke = new Joke(getValue(newJokeInput));
     saveJoke(newJoke);
     newJokeInput.value = "";
+    Toast.show('Piada adicionada com sucesso!', 'added');
     console.log('Piada salva')
 }
 
