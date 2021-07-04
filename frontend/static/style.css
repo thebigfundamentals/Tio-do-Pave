@@ -204,6 +204,7 @@ footer a {
         align-items: center;
         margin-left: 5em;
         margin-right: 5em;
+        flex-grow: 0;
         
         text-align: center;
         font-family: 'Raleway', sans-serif;
