@@ -35,7 +35,7 @@ app.post('/api', (req, res) => {
 
 app.post('/keyword', (req, res) => {
     const data = req.body;
-    const dataRegex = new RegExp(data.keyword);
+    const dataRegex = new RegExp(data.keyword, 'i');
     jokesDb.find({ line: dataRegex }, (err, jokes) => {
         res.json(jokes);
     })

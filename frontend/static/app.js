@@ -55,4 +55,10 @@ const jokeHandler = async () => {
 }
 
 jokeButton.addEventListener('click', jokeHandler)
+document.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        jokeButton.click();
+    }
+});
 window.addEventListener('DOMContentLoaded', displayTotalJokes)
