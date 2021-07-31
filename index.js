@@ -45,3 +45,8 @@ app.get('/add',
     (req, res) => res.sendFile('frontend/add.html',
         { root: __dirname })
 );
+
+app.get('/all',
+    (req, res) => res.sendFile('frontend/all.html',
+        { root: __dirname })
+);
